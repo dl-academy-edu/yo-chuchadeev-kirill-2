@@ -1,0 +1,116 @@
+// стили для анимации
+
+
+.animation {
+    margin-left: 110px;
+}
+
+
+.scene {
+    position: relative;
+    margin-top: 50px;
+    width: 1618px;
+    height: 768px;
+    left: 5px;
+}
+
+.scene__cloud {
+    position: absolute;
+    left: 176px;
+}
+
+.scene__city__background {
+    position: absolute;
+    top: 136px;
+    left: -16px;
+}
+
+.scene__city__car1 {
+    position: absolute;
+    top: 427px;
+    left: 37px;
+}
+
+.scene__city__car2 {
+    position: absolute;
+    left: 421px;
+    top: 426px;
+}
+
+.scene__city__car3 {
+    position: absolute;
+    left: 719px;
+    top: 440px;
+}
+
+.scene__city__car4 {
+    position: absolute;
+    left: 1270px;
+    top: 410px;
+}
+
+.scene__city__lantern1 {
+    position: absolute;
+    left: 527px;
+    top: 172px;
+}
+
+.scene__city__lantern2 {
+    position: absolute;
+    left: 1403px;
+    top: 171px;
+}
+
+.scene__city__taxiCar {
+    position: absolute;
+    left: 648px;
+    top: 401px;
+}
+
+.scene__city__taxiCarMessage {
+    position: absolute;
+    left: 962px;
+    top: 346px;
+}
+
+.scene__city__lanternOn {
+    position: absolute;
+    left: 1122px;
+    top: 162px;
+}
+
+.scene__city__woman {
+    position: absolute;
+    left: 277px;
+    top: 456px;
+}
+
+.scene__city__womanMessage {
+    position: absolute;
+    left: 183px;
+    top: 350px;
+}
+
+.scene__city__suitcases {
+    position: absolute;
+    left: 267px;
+    top: 629px;
+}
+
+.scene__city__manHand {
+    position: absolute;
+    left: 383px;
+    top: 331px;
+}
+
+.scene__city__man {
+    position: absolute;
+    left: 383px;
+    top: 370px;
+}
+
+.scene__city__manMessage {
+    position: absolute;
+    left: 369px;
+    top: 285px;
+}

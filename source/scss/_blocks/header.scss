@@ -1,11 +1,9 @@
 /* Стили для хедера */
 
 .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
-    margin-left: 109px;
+    margin-left: 110px;
     // margin-bottom: 40px;
     margin-right: 110px;
     text-transform: uppercase;
@@ -29,37 +27,26 @@
 }
 
 .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
 .header__nav__list {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     font-weight: 400;
     padding: 0px;
     grid-gap: 20px;  /* расстояние между ссылками */
 }
 
 .header__contact__us {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     font-weight: 700;
     padding: 0px;
-    margin-left: 678px;
+    margin-left: 479px;
 }
 
 .header__img__search {
     margin-right: 23px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
 }

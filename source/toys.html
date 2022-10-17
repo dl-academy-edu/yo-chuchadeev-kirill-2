@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Toys</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main class="toys__main center">
+        <section class="toys__category">
+            <h1 class="title__h1">Toy for kids</h1>
+            <a class="page" href="/index.html">Home</a>
+            <img class="page__next" src="/img/icons/vectorStroke.svg" alt="" width="8" height="12">
+            <a class="page" href="/catalog.html">Catalog</a>
+            <img class="page__next" src="/img/icons/vectorStroke.svg" alt="" width="8" height="12">
+            <a class="page active" href="/toys.html">Toys</a>
+        </section>
+        <section class="toys__filter">
+            <h2 class="toys__filter__title">Filter</h2>
+            <form action="toys__filter__form">
+                <ul class="toys__filter__list">
+                    <li class="toys__filter__list_items">
+                        <div class="toys__filter__cost">
+                            <p class="toys__filter__name">Cost</p>
+                            <input class="toys__filter__range" type="range" min="0" max="500" step="1" value="1">
+                            <div class="toys__filter__cost_range">
+                                <p>0</p>
+                                <p>500</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="toys__filter__list_items">
+                        <section class="toys__filter__color">
+                            <h5>Color</h5>
+                            <p class="toys__filter__name">Color</p>
+                            <div class="toys__filter__checkbox">
+                                <input class="toys__input__color" type="checkbox" name="Color" id="color_black">
+                                <label for="color_black" class="toys__label__color">Black</label>
+                            </div>
+                            <div class="toys__filter__checkbox">
+                                <input class="toys__input__color" type="checkbox" name="Color" id="color_blue">
+                                <label for="color_blue" class="toys__label__color">Blue</label>
+                            </div>
+                            <div class="toys__filter__checkbox">
+                                <input class="toys__input__color" type="checkbox" name="Color" id="color_green">
+                                <label for="color_green" class="toys__label__color">Green</label>
+                            </div>
+                            <div class="toys__filter__checkbox">
+                                <input class="toys__input__color" type="checkbox" name="Color" id="color_white">
+                                <label for="color_white" class="toys__label__color">White</label>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="toys__filter__list_items">
+                        <div class="toys__filter__delivery">
+                            <p class="toys__filter__name">Delivery</p>
+                            <div class="toys__input__delivery">
+                                <input class="toys__input_radio__delivery" type="radio" name="Delivery" id="free_shipping">
+                                <label for="free_shipping" class="toys__label_radio__delivery">Free shipping</label>
+                            </div>
+                            <div class="toys__input__delivery">
+                                <input class="toys__input_radio__delivery" type="radio" name="Delivery" id="fast_shipping">
+                                <label for="fast_shipping" class="toys__label_radio__delivery">Fast shipping</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="toys__filter__list_items">
+                        <div class="toys__filter__amount">
+                            <p class="toys__filter__name">Amount</p>
+                            <div class="toys__filter__radio_button">
+                                <input class="toys__input__amount" type="radio" name="Amount" id="amount05">
+                                <label class="toys__label__amount" for="amount05">0-5</label>
+                                <input class="toys__input__amount" type="radio" name="Amount" id="amount1020">
+                                <label class="toys__label__amount" for="amount1020">10-20</label>
+                                <input class="toys__input__amount" type="radio" name="Amount" id="amount2050">
+                                <label class="toys__label__amount" for="amount2050">20-50</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="toys__filter__list_items">
+                        <button class="toys__filter__submit" type="submit">apply</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section class="toys__catalog">
+            <h5>Catalog</h5>
+            <ul class="toys__catalog__list">
+                <li class="toys__catalog__list_items">
+                    <a href="#" class="toys__catalog__pic">
+                        <img class="toys__catalog__items_pic" src="/img/image/product1.png" alt="SHARKY BEAN BAG CHAIR COVER" width="380" height="385">
+                        <p class="toys__learn_more">learn more</p>
+                    </a>
+                    <p class="toys__catalog__items_name">SHARKY BEAN BAG CHAIR COVER</p>
+                    <p class="toys__catalog__items_price">$60.00 USD</p>
+                </li>
+                <li class="toys__catalog__list_items">
+                    <a href="#" class="toys__catalog__pic">
+                        <img class="toys__catalog__items_pic" src="/img/image/product2.png" alt="BRASS DECO FRAMES" width="380" height="385">
+                        <p class="toys__learn_more">learn more</p>
+                    </a>
+                    <p class="toys__catalog__items_name">BRASS DECO FRAMES</p>
+                    <p class="toys__catalog__items_price">$66.00 USD</p>
+                </li>
+                <li class="toys__catalog__list_items">
+                    <a href="#" class="toys__catalog__pic">
+                        <img class="toys__catalog__items_pic" src="/img/image/product3.png" alt="CIBO FULL APRON" width="380" height="385">
+                        <p class="toys__learn_more">learn more</p>
+                    </a>
+                    <p class="toys__catalog__items_name">CIBO FULL APRON</p>
+                    <p class="toys__catalog__items_price">$60.00 USD</p>
+                </li>
+                <li class="toys__catalog__list_items">
+                    <a href="#" class="toys__catalog__pic">
+                        <img class="toys__catalog__items_pic" src="/img/image/product4.png" alt="GATCHA GATCHA GUMBALL MACHINE" width="380" height="385">
+                        <p class="toys__learn_more">learn more</p>
+                    </a>
+                    <p class="toys__catalog__items_name">GATCHA GATCHA GUMBALL MACHINE</p>
+                    <p class="toys__catalog__items_price">$56.00 USD</p>
+                </li>
+                <li class="toys__catalog__list_items">
+                    <a href="#" class="toys__catalog__pic">
+                        <img class="toys__catalog__items_pic" src="/img/image/product5.png" alt="CHRISTMAS ADVENT SCENTED CANDLE" width="380" height="385">
+                        <p class="toys__learn_more">learn more</p>
+                    </a>
+                    <p class="toys__catalog__items_name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                    <p class="toys__catalog__items_price">$29.00 USD</p>
+                </li>
+                <li class="toys__catalog__list_items">
+                    <a href="#" class="toys__catalog__pic">
+                        <img class="toys__catalog__items_pic" src="/img/image/product6.png" alt="TANGLE SPINNING TEA LIGHT" width="380" height="385">
+                        <p class="toys__learn_more">learn more</p>
+                    </a>
+                    <p class="toys__catalog__items_name">TANGLE SPINNING TEA LIGHT</p>
+                    <p class="toys__catalog__items_price">$56.00 USD</p>
+                </li>
+            </ul>
+        </section>
+        <section class="pages">
+            <h5>Catalog pages</h5>
+            <a href="">
+                <img src="/img/icons/vectorLeft.svg" alt="page back" width="18" height="30">
+            </a>
+            <ul class="pages__list">
+                <li class="pages_active">
+                    <a href="">1</a>
+                </li>
+                <li class="pages__list_items">
+                    <a href="">2</a>
+                </li>
+                <li class="pages__list_items">
+                    <a href="">3</a>
+                </li>
+                <li class="pages__list_items">
+                    <a href="">4</a>
+                </li>
+            </ul>
+            <a href="">
+                <img src="/img/icons/vectorRight.svg" alt="page next" width="18" height="30">
+            </a>
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>

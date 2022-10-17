@@ -1,0 +1,67 @@
+.title__h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: #1E0606;
+}
+
+.title__h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    color: #1E0606;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.page {
+    font-family: 'Crimson Text';
+    font-size: 20px;
+    font-style: italic;
+    color: #1E0606;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+.page__next {
+    margin: 0px 20px;
+}
+
+.pages {
+    display: flex;
+    margin: 0px 113px 60px 113px;
+    vertical-align: middle;
+}
+
+.pages__list {
+    display: flex;
+    gap: 64px;
+    margin-left: 467px;
+    margin-right: 467px;
+    align-items: center;
+}
+
+.pages__list_items {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+.pages_active a {
+    color: #C29974;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+.pages__list_items a {
+    color: #1E0606;
+    &:hover {
+        color: #AAAAAA;
+    }
+}
