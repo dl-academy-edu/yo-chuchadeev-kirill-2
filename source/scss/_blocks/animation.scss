@@ -1,0 +1,286 @@
+// стили для анимации
+
+
+.animation {
+    margin-left: 110px;
+}
+
+.scene {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 768px;
+    left: 5px;
+}
+
+.scene__cloud {
+    position: absolute;
+    left: 176px;
+}
+
+.scene__city {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.scene__city__background {
+    position: absolute;
+    top: 136px;
+    left: -16px;
+}
+
+@keyframes scene__city__car1 {
+    83% {
+        left: 1600px;
+        opacity: 1;
+    }
+    84% {
+        left: 1600px;
+        opacity: 0;
+    }
+    85% {
+        left: -250px;
+        opacity: 0;
+    }
+    86% {
+        left: -250px;
+        opacity: 1;
+    }
+    100% {
+        left: 37px;
+        opacity: 1;
+    }
+}
+
+.scene__city__car1 {
+    position: absolute;
+    top: 427px;
+    left: 37px;
+    animation: scene__city__car1 5s forwards infinite linear;
+}
+
+@keyframes scene__city__car2 {
+    55% {
+        left: 1600px;
+        opacity: 1;
+    }
+    56% {
+        left: 1600px;
+        opacity: 0;
+    }
+    57% {
+        left: -500px;
+        opacity: 0;
+    }
+    58% {
+        left: -500px;
+        opacity: 1;
+    }
+    100% {
+        left: 421px;
+        opacity: 1;
+    }
+}
+
+.scene__city__car2 {
+    position: absolute;
+    top: 426px;
+    left: 421px;
+    animation: scene__city__car2 7s forwards infinite linear;
+}
+
+@keyframes scene__city__car3 {
+    40% {
+        left: 1600px;
+        opacity: 1;
+    }
+    41% {
+        left: 1600px;
+        opacity: 0;
+    }
+    42% {
+        left: -500px;
+        opacity: 0;
+    }
+    43% {
+        left: -500px;
+        opacity: 1;
+    }
+    100% {
+        left: 719px;
+        opacity: 1;
+    }
+}
+
+.scene__city__car3 {
+    position: absolute;
+    top: 440px;
+    left: 719px;
+    animation: scene__city__car3 5s forwards infinite linear;
+}
+
+@keyframes scene__city__car4 {
+    15% {
+        left: 1600px;
+        opacity: 1;
+    }
+    16% {
+        left: 1600px;
+        opacity: 0;
+    }
+    17% {
+        left: -500px;
+        opacity: 0;
+    }
+    18% {
+        left: -500px;
+        opacity: 1;
+    }
+    100% {
+        left: 1270px;
+        opacity: 1;
+    }
+}
+
+.scene__city__car4 {
+    position: absolute;
+    top: 410px;
+    left: 1270px;
+    animation: scene__city__car4 9s forwards infinite linear;
+}
+
+.scene__city__lantern1 {
+    position: absolute;
+    top: 172px;
+    left: 527px;
+}
+
+.scene__city__lantern2 {
+    position: absolute;
+    top: 171px;
+    left: 1403px;
+}
+
+@keyframes scene__city__taxiCar {
+    0% {
+        left: 1648px;
+    }
+    20% {
+        left: 648px;
+    }
+    50% {
+        left: 648px;
+    }
+    70% {
+        left: -1000px;
+    }
+    100% {
+        left: -1000px;
+    }
+}
+
+.scene__city__taxiCar {
+    position: absolute;
+    top: 401px;
+    left: 1648px;
+    animation: scene__city__taxiCar 10s forwards infinite ease 3s;
+}
+
+@keyframes scene__city__taxiCarMessage {
+    10% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+}
+
+.scene__city__taxiCarMessage {
+    position: absolute;
+    top: 346px;
+    left: 962px;
+    opacity: 0;
+    animation: scene__city__taxiCarMessage 10s forwards infinite ease 5s;
+}
+
+.scene__city__lanternOn {
+    position: absolute;
+    top: 162px;
+    left: 1122px;
+}
+
+.scene__city__woman {
+    position: absolute;
+    top: 456px;
+    left: 277px;
+}
+
+@keyframes scene__city__womanMessage {
+    10% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+.scene__city__womanMessage {
+    position: absolute;
+    top: 350px;
+    left: 183px;
+    opacity: 0;
+    animation: scene__city__womanMessage 10s infinite 1s;
+}
+
+.scene__city__suitcases {
+    position: absolute;
+    top: 629px;
+    left: 267px;
+}
+
+@keyframes scene__city__manHand {
+    20% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(150deg);
+    }
+}
+
+.scene__city__manHand {
+    // position: absolute;
+    // left: 383px;
+    // top: 331px;
+    position: absolute;
+    top: 315px;
+    left: 400px;
+    transform: rotate(150deg);
+    transform-origin: 0 120px;
+    animation: scene__city__manHand 10s infinite 3s;
+}
+
+.scene__city__man {
+    position: absolute;
+    top: 370px;
+    left: 383px;
+}
+
+@keyframes scene__city__manMessage {
+    30% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.scene__city__manMessage {
+    position: absolute;
+    top: 285px;
+    left: 369px;
+    opacity: 0;
+    animation: scene__city__manMessage 10s infinite 3s;
+}

@@ -1,0 +1,46 @@
+.center {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans';
+    min-width: 1400px;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p, 
+ul, 
+hr,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.company__title, 
+h5 {
+    display: none;
+}
+
+input, 
+textarea {
+    outline: none;
+}
+
+input[type="text"]:hover, 
+input[type="tel"]:focus, 
+input[type="tel"]:hover, 
+input[type="text"]:focus, 
+textarea:focus,
+textarea:hover {
+    border: 1px solid #C29974;
+}

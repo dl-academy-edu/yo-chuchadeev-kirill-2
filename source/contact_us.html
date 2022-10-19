@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <title>Contact Us</title>
+    </head>
+    <body>
+        @@include('blocks/header.html')
+        <main class="contactus__main center">
+            <section class="contactus__category">
+                <h1 class="title__h1">contact us</h1>
+                <a class="page" href="/index.html">Home</a>
+                <img class="page__next" src="/img/icons/vectorStroke.svg" alt="" width="8" height="12">
+                <a class="page active" href="/contact_us.html">Contact Us</a>
+            </section>
+            <section class="contact__content">
+                <h5>Contact Us</h5>
+                <form class="contact__form">
+                    <div class="contact__list">
+                        <label for="input__name" class="input__label">Name</label>
+                        <input class="input__name" type="text" id="input__name" placeholder="Ivan Ivanov">
+                        <ul>
+                            <li class="contact__list_items">
+                                <label for="input__phone" class="input__label">Phone</label>
+                                <input type="tel" class="input__phone" id="input__phone">
+                            </li>
+                            <li class="contact__list_items">
+                                <label for="input__email" class="input__label">Email</label>
+                                <input type="text" class="input__email" id="input__email">
+                            </li>
+                        </ul>
+                        <label for="input__msg" class="input__label">Message</label>
+                            <textarea name="Message" id="input__msg" cols="30" rows="10"></textarea>
+                        <div class="checkbox__input">
+                            <input type="checkbox" class="input__check" id="input__check">
+                            <label for="input__check" class="input__label">By clicking on the button, you consent to the processing of your personal data</label>
+                        </div>
+                        <button class="button__submit" type="submit">submit</button>
+                    </div>
+                </form>
+                <div class="contactus__info">
+                    <p class="contactus__p__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                    <p class="contactus__p__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                    <p class="contactus__p__wait">An expert is waiting to help you!</p>
+                </div>
+            </section>
+        </main>
+        @@include('blocks/footer.html')
+        <script src="/js/contact_us.js"></script>
+    </body>
+</html>

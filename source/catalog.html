@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Catalog</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main class="center">
+        <section class="catalog__category">
+            <h1 class="title__h1">Category Products</h1>
+            <a class="page" href="/index.html">Home</a>
+            <img class="page__next" src="/img/icons/vectorStroke.svg" alt="" width="8" height="12">
+            <a class="page active" href="/catalog.html">Catalog</a>
+            <ul class="catalog__category__list">
+                <li class="catalog__category__list_items">
+                    <a class="catalog__category__name">APPAREL KIDS</a>
+                    <img class="catalog__category__img" src="/img/image/category1.jpg" alt="banner01" width="280" height="270">
+                </li>
+                <li class="catalog__category__list_items"> 
+                    <a class="catalog__category__name">HOLIDAY SHOP</a>
+                    <img class="catalog__category__img" src="/img/image/category2.jpg" alt="banner02" width="280" height="270">
+                </li>
+                <li class="catalog__category__list_items">
+                    <a href="/toys.html" class="catalog__category__name">TOYS</a>
+                    <img class="catalog__category__img" src="/img/image/category3.jpg" alt="Toys" width="280" height="270">
+                </li>
+                <li class="catalog__category__list_items">
+                    <a class="catalog__category__name">ACCESSORIES</a>
+                    <img class="catalog__category__img" src="/img/image/category4.jpg" alt="banner04" width="280" height="270">
+                </li>
+                <li class="catalog__category__list_items">
+                    <a class="catalog__category__name">SALE</a>
+                    <img class="catalog__category__img" src="/img/image/category5.jpg" alt="banner05" width="280" height="270">
+                </li>
+                <li class="catalog__category__list_items">
+                    <a class="catalog__category__name">APPAREL ADULTS</a>
+                    <img class="catalog__category__img" src="/img/image/category6.jpg" alt="banner06" width="280" height="270">
+                </li>
+            </ul>
+        </section>
+        <section class="catalog__product">
+            <h2 class="catalog__product__title">Product Description</h2>
+            <p class="catalog__product__text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+            <p class="catalog__product__text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+            <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+        </section>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>
