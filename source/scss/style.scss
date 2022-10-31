@@ -46,15 +46,18 @@
 
 
 
-/* Стили для index*/
+// style for index
+
+.index__main {
+    max-width: 1400px;
+}
 
 .index__banner {
     display: flex;
     flex-direction: column;
-    width: 1180px;
+    max-width: 1180px;
     height: 411px;
-    margin: 0px 110px;
-    margin-top: 129px;
+    margin: 129px 110px 0 110px;
     background-color: #EEE4DB;
     background-size: 1180px 411px;
 }
@@ -62,7 +65,7 @@
 .index__banner__list {
     margin: 0;
     padding: 0;
-    height: 350px;
+    height: 372px;
     display: flex;
 }
 
@@ -113,6 +116,7 @@
 }
 
 .index__banner__img {
+    display: flex;
     position: relative;
     margin-left: 5px;
     width: 636px;
@@ -168,17 +172,17 @@
 }
 
 .index__banner__ship {
-    height: 17px;
+    display: flex;
+    height: 39px;
     z-index: 2;
     background: #C29974;
-    padding: 11px 364px;
     font-size: 12px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
     font-weight: 700;
-    margin: 0px;
-    margin-top: 22px;
+    justify-content: center;
+    align-items: center;
 }
 
 .category__products {
@@ -654,7 +658,7 @@ textarea {
 }
 
 
-// Стили для blog
+// style for Blog
 
 .category__blog {
     display: block;
@@ -701,11 +705,22 @@ textarea {
 
 
 
-// стили для каталога
+// style for Catalog
+
+.main__catalog {
+    max-width: 1400px;
+}
+
+.breadcrumb {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
 .catalog__category {
-    display: block;
-    margin-left: 110px;
+    margin: 0 110px;
+    max-width: 100%;
+    transition: .3s;
 }
 
 .active {
@@ -714,30 +729,48 @@ textarea {
 
 .catalog__category__list {
     display: flex;
-    position: relative;
+    padding: 0;
+    // position: relative;
     max-width: 1080px;
     flex-wrap: wrap;
     grid-gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 55px;
+    margin: 50px 110px 55px 110px;
+    @media screen and (max-width: 1300px) {
+        width: 880px;
+    }
 }
 
 .catalog__category__list_items {
-    display: block;
+    display: flex;
     position: relative;
     width: 280px;
     height: 270px;
     background-color: #C7C1C1;
+    transition: .3s;
+    @media screen and (max-width: 900px) {
+        width: 203px;
+        height: 196px;
+    }
 }
 
 .catalog__category__list_items:nth-child(n+4):nth-child(-n+4) {
     margin-left: 200px;
+    transition: .3s;
+    @media screen and (max-width: 1300px) {
+        margin-left: 0px;
+
+    }
 }
 
 .catalog__category__img {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
+    transition: .3s;
+    @media screen and (max-width: 900px) {
+        width: 203px;
+        height: 196px;
+    }
 }
 
 .catalog__category__name {
@@ -753,6 +786,7 @@ textarea {
     font-family: 'Montserrat';
     font-weight: 700;
     color: #FFFFFF;
+    transition: .3s;
     &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -761,7 +795,8 @@ textarea {
 
 .catalog__product {
     margin-left: 310px;
-    width: 680px;
+    max-width: 680px;
+    transition: .3s;
 }
 
 .catalog__product__title {
@@ -770,6 +805,7 @@ textarea {
     font-size: 38px;
     margin: 0;
     margin-bottom: 25px;
+    transition: .3s;
 }
 
 .catalog__product__text {
@@ -780,7 +816,7 @@ textarea {
 
 
 
-// Стили для СВГ
+// style for SVG
 
 .svg__main {
     margin-top: 60px;
@@ -796,7 +832,8 @@ textarea {
 }
 
 
-// Стили для контакт ас
+// style for contact us
+
 
 .contactus__category {
     display: block;
@@ -980,7 +1017,8 @@ textarea {
 
 
 
-// Стили для тойса
+// style for Toys
+
 
 .toys__category {
     display: block;

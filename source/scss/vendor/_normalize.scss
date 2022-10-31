@@ -1,19 +1,24 @@
 .title__h1 {
+    display: flex;
     text-transform: uppercase;
     font-size: 40px;
     font-family: 'Montserrat';
     margin-top: 60px;
     margin-bottom: 15px;
     color: #1E0606;
+    width: 100%;
+    transition: .3s;
 }
 
 .title__h2 {
+    display: flex;
     text-transform: uppercase;
     font-size: 36px;
     font-family: 'Montserrat';
     color: #1E0606;
     margin-top: 60px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .page {
