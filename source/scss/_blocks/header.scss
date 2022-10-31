@@ -1,5 +1,15 @@
 /* Style for header */
 
+#header__menu {
+    display: none;
+    // opacity: 0;
+}
+
+#header__menu:checked ~ .header__nav__list {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
 
 .header {
     max-width: 1178px;
@@ -11,6 +21,13 @@
     font-size: 14px;
     justify-content: space-between;
     transition: .3s;
+    z-index: 5;
+    @media screen and (max-width: 960px) {
+        margin: 35px 60px;
+    }
+    @media screen and (max-width: 700px) {
+        margin: 25px 30px;
+    }
 }
 
 .header a {
@@ -33,6 +50,18 @@
     }
 }
 
+.logo_dlk {
+    @media screen and (max-width: 960px) {
+        width: 62px;
+        height: 32px;
+        transition: .2s;
+    }
+    @media screen and (max-width: 700px) {
+        height: 22px;
+        width: 42px;
+    }
+}
+
 .header__nav {
     display: flex;
 }
@@ -44,6 +73,36 @@
     padding: 0px;
     grid-gap: 20px;  /* расстояние между ссылками */
     margin-left: 60px;
+    @media screen and (max-width: 960px) {
+        display: flex;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        top: 102px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 0px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 2;
+        background-color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    @media screen and (max-width: 700px) {
+        top: 73px;
+    }
+}
+
+.header__menu__label {
+    display: none;
+    @media screen and (max-width: 960px) {
+        display: flex;
+    }
 }
 
 .header__contact__us {
@@ -53,51 +112,40 @@
     font-weight: 700;
     padding: 0px;
     vertical-align: middle;
+    @media screen and (max-width: 960px) {
+        width: 62px;
+        justify-content: flex-end;
+    }
+    @media screen and (max-width: 700px) {
+        width: 42px;
+        justify-content: flex-end;
+    }
 }
 
 .header__img__search {
     margin-right: 23px;
     align-self: center;
+    @media screen and (max-width: 960px) {
+        margin: 0;
+    }
+    @media screen and (max-width: 700px) {
+        height: 13px;
+        width: 13px;
+    }
 }
 
-.header__menu {
+.header__contact__us__text {
+    @media screen and (max-width: 960px) {
+        display: none;
+    }
+}
+
+.header__nav__list_contact {
     display: none;
     @media screen and (max-width: 960px) {
         display: flex;
-        align-self: center;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .header__contact__us__p {
-        display: none;
-    }
-    .header__img__search {
-        margin: 0;
-    }
-    .header__nav__list {
-        display: none;
-    }
-    .header {
-        margin: 35px 60px;
-    }
-    .logo_dlk {
-        width: 62px;
-        height: 32px;
-        transition: .2s;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .header {
-        margin: 25px 30px;
-    }
-    .logo_dlk {
-        height: 22px;
-        width: 42px;
-    }
-    .header__img__search {
-        height: 13px;
-        width: 13px;
+        font-size: 16px;
+        margin-top: 15px;
+        font-weight: 700;
     }
 }
