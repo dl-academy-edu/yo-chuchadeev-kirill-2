@@ -13,19 +13,35 @@
 .title__h2 {
     display: flex;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'Montserrat';
     color: #1E0606;
     margin-top: 60px;
     margin-bottom: 10px;
     width: 100%;
+    line-height: 49px;
+    transition: .3s;
+    @media screen and (max-width: 960px) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .page {
     font-family: 'Crimson Text';
     font-size: 20px;
+    line-height: 26px;
     font-style: italic;
     color: #1E0606;
+    transition: .3s;
+    @media screen and (max-width: 700px) {
+        font-size: 16px;
+        line-height: 21px;
+    }
 }
 
 .active {
@@ -34,6 +50,10 @@
 
 .page__next {
     margin: 0px 20px;
+    transition: .3s;
+    @media screen and (max-width: 700px) {
+        margin: 0px 14px;
+    }
 }
 
 .pages {
