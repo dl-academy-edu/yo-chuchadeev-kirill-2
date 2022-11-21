@@ -2,12 +2,25 @@
     display: flex;
     text-transform: uppercase;
     font-size: 40px;
+    line-height: 49px;
     font-family: 'Montserrat';
+    font-weight: 700;
     margin-top: 60px;
     margin-bottom: 15px;
     color: #1E0606;
     width: 100%;
     transition: .3s;
+    @media screen and (max-width: 960px) {
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 70px;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 46px;
+        margin-bottom: 10px;
+    }
 }
 
 .title__h2 {
@@ -58,16 +71,40 @@
 
 .pages {
     display: flex;
-    margin: 0px 113px 60px 113px;
-    vertical-align: middle;
+    align-items: center;
+    justify-content: space-between;
+    // max-width: 1180px;
+    margin: 0px 110px 60px 110px;
+    // vertical-align: middle;
+    transition: .3s;
+    @media screen and (max-width: 960px) {
+        margin: 0px 60px 50px 60px;
+    }
+    @media screen and (max-width: 700px) {
+        margin: 0px 23px 50px 23px;
+    }
+}
+
+.pages__vector {
+    width: 18px;
+    height: 30px;
+    @media screen and (max-width: 700px) {
+        width: 16px;
+        height: 26px;
+    }
 }
 
 .pages__list {
     display: flex;
     gap: 64px;
-    margin-left: 467px;
-    margin-right: 467px;
-    align-items: center;
+    height: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    @media screen and (max-width: 700px) {
+        gap: 51px;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .pages__list_items {
