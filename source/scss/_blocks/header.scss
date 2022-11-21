@@ -11,7 +11,7 @@
 .header {
     max-width: 1178px;
     display: flex;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-left: 110px;
     margin-right: 110px;
     text-transform: uppercase;
@@ -21,11 +21,13 @@
     transition: .3s;
     z-index: 50;
     @media screen and (max-width: 960px) {
-        margin: 35px 60px;
+        padding-top: 35px;
+        margin: 0 60px 35px 60px;
         justify-content: space-between;
     }
     @media screen and (max-width: 700px) {
-        margin: 25px 30px;
+        margin: 0 30px 25px 30px;
+        padding-top: 25px;
     }
 }
 
@@ -95,6 +97,15 @@
     transition: .3s;
 }
 
+.menu_close {
+    transition: .3s;
+    display: none;
+}
+.menu_open {
+    transition: .3s;
+    display: flex;
+}
+
 .header__nav {
     display: flex;
     margin-left: 60px;
@@ -117,8 +128,9 @@
 
 .header__nav_open {
     display: flex;
-    overflow-y: hidden;
+    overflow: hidden;
     transition: .3s;
+    position: fixed;
 }
 
 // .header_menu_open {

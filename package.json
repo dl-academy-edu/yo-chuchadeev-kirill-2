@@ -1,9 +1,9 @@
 {
-  "name": "dl-academy-markup-template",
+  "name": "design-life-kids",
   "version": "1.0.0",
   "private": true,
   "description": "Markup template",
-  "author": "DirectLine Development",
+  "author": "Chuchadeev Kirill",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build",

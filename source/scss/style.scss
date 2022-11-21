@@ -204,9 +204,8 @@
         width: 292px;
         height: 226px;
         top: 211px;
-        left: -242px;
+        left: -213px;
         margin-right: 0px;
-
     }
 }
 
@@ -264,6 +263,7 @@
     border: 0;
     margin-left: 44px;
     color: #FFFFFF;
+    z-index: 5;
     transition: .3s;
     &:hover {
         background-color: #C29974;
@@ -350,13 +350,16 @@
     grid-gap: 20px;
     // flex-wrap: wrap;
     position: relative;
-    max-height: 270px;
+    // max-height: 270px;
     overflow: hidden;
+    left: 0;
+    transition: .5s;
     @media screen and (max-width: 960px) {
         margin-top: 24px;
     }
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 700px) {
         margin-top: 20px;
+        grid-gap: 16px;
     }
 }
 
@@ -947,6 +950,8 @@
 
 .popup_open {
     display: flex;
+    overflow: hidden;
+    position: fixed;
     justify-content: center;
 }
 
