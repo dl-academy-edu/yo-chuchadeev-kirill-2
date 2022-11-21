@@ -168,30 +168,28 @@
         @@include('blocks/footer.html')
         <div class="popup">
             <form class="popup__form">
-                <ul class="popup__list">
-                    <li>
-                        <label for="popup__input__name" class="popup__input__label">Name</label>
-                        <input class="popup__input__name" type="text" id="popup__input__name" placeholder="Ivan Ivanov">
-                    </li>
-                    <li class="popup__list_items">
-                        <label for="popup__input__phone" class="popup__input__label">Phone</label>
-                        <input type="tel" class="popup__input__phone" id="popup__input__phone">
-                    </li>
-                    <li class="popup__list_items">
-                        <label for="popup__input__email" class="popup__input__label">Email</label>
-                        <input type="text" class="popup__input__email" id="popup__input__email">
-                    </li>
-                    <li>
-                        <label for="popup__input__msg" class="popup__input__label">Message</label>
-                            <textarea name="Message" id="popup__input__msg" cols="30" rows="10"></textarea>
-                        <div class="popup__checkbox__input">
-                            <input type="checkbox" class="popup__input__check" id="popup__input__check">
-                            <label for="popup__input__check" class="popup__input__label">By clicking on the button, you consent to the processing of your personal data</label>
-                        </div>
-                        <button class="popup__button__submit" type="submit">submit</button>
-                    </li>
-                </ul>
-                <img src="/img/icons/close.svg" alt="" class="popap__close" width="15" height="15">
+                <div class="popup__list">
+                    <label for="popup__input__name" class="popup__input__label">Name</label>
+                    <input class="popup__input__name" type="text" id="popup__input__name" placeholder="Ivan Ivanov">
+                    <ul class="popup__list__input">
+                        <li class="popup__list_items">
+                            <label for="popup__input__phone" class="popup__input__label">Phone</label>
+                            <input type="tel" class="popup__input__phone" id="popup__input__phone">
+                        </li>
+                        <li class="popup__list_items">
+                            <label for="popup__input__email" class="popup__input__label">Email</label>
+                            <input type="text" class="popup__input__email" id="popup__input__email">
+                        </li>
+                    </ul>
+                    <label for="popup__input__msg" class="popup__input__label">Message</label>
+                        <textarea name="Message" id="popup__input__msg" cols="30" rows="10"></textarea>
+                    <div class="popup__checkbox__input">
+                        <input type="checkbox" class="popup__input__check" id="popup__input__check">
+                        <label for="popup__input__check" class="popup__input__label">By clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                    <button class="popup__button__submit" type="submit">submit</button>
+                </div>
+                <img src="/img/icons/close.svg" alt="" class="popup__close" width="15" height="15">
             </form>
         </div>
         <script src="/js/index.js"></script>

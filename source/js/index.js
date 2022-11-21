@@ -1,6 +1,6 @@
 var popup = document.querySelector('.popup')
 var popapBtn = document.querySelector('.index__banner_js')
-var popapClose = document.querySelector('.popap__close')
+var popapClose = document.querySelector('.popup__close')
 
 var check = document.querySelector ('#popup__input__check')
 var submit = document.querySelector ('.popup__button__submit')
