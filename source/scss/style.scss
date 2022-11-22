@@ -50,7 +50,7 @@
 
 .index__main {
     max-width: 1400px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 }
 
 .index__banner {
@@ -755,8 +755,7 @@
     }
     @media screen and (max-width: 760px) {
         flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 86px 0px 0px 0px;
         width: 100%;
         gap: 35px;
     }
@@ -767,7 +766,6 @@
     max-width: 543px;
     @media screen and (max-width: 1242px) {
         max-width: 483px;
-        
     }
     @media screen and (max-width: 760px) {
         max-width: 100%;
