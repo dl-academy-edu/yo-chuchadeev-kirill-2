@@ -29,7 +29,7 @@
         <link href="css/style.min.css" rel="stylesheet">
         <!-- endbuild -->
     </head>
-    <body>
+    <body id="body">
         @@include('blocks/header.html')
         <main class="index__main center">
             <section class="index__banner">
@@ -47,8 +47,11 @@
                         <p class="index__banner__text">Designed in Slovenia</p>
                         <button class="index__button_explore index__banner_js">EXPLORE NOW</button>
                     </li>
-                    <li>
-                        <img class="index__banner__img" src="./img/image/mainBanner.png" alt="banner" width="635" height="461">
+                    <li class="index__banner__list_pic">
+                        <picture class="index__banner__list_picture">
+                            <source src="/img/image/mainBanner.png, /img/image/mainBanner-retina.png 2x" width="635" height="461">
+                            <img class="index__banner__img" src="./img/image/mainBanner.png" alt="banner" width="635" height="461">
+                        </picture>
                     </li>
                 </ul>
                 <p class="index__banner__ship">Free (continental) USA shipping on all orders of $100 USD or more!</p>
@@ -72,15 +75,23 @@
                         <a class="category__products__name" href="">Accessories</a>
                         <img class="category__products__img" src="./img/image/category4.jpg" alt="Accessories" width="280" height="270">
                     </li>
+                    <li class="category__products__list_items">
+                        <a class="category__products__name" href="">Apparel kids</a>
+                        <img class="category__products__img" src="./img/image/category1.jpg" alt="Apparel kids" width="280" height="270">
+                    </li>
+                    <li class="category__products__list_items">
+                        <a class="category__products__name" href="">Holiday shop</a>
+                        <img class="category__products__img" src="./img/image/category2.jpg" alt="Holiday shop" width="280" height="270">
+                    </li>
                 </ul>
                 <ul class="category__products__swapper">
                     <li class="category__products__swapper_left">
-                        <button class="button__swapper">
+                        <button class="button__swapper slider_left">
                             <img src="./img/icons/buttonLeft.svg" alt="Button left" width="18" height="30">
                         </button>
                     </li>
                     <li class="category__products__swapper_right">
-                        <button class="button__swapper">
+                        <button class="button__swapper slider_right">
                             <img src="./img/icons/buttonRight.svg" alt="Button right" width="18" height="30">
                         </button>
                     </li>
@@ -91,7 +102,12 @@
             </section>
             <section class="index__delivery">
                 <h5>Delivery</h5>
-                <img class="index__delivery__banner" src="./img/image/banner2.jpg" alt="banner2" width="480" height="559">
+                <picture class="index__delivery__banner">
+                    <source srcset="/img/image/banner2-mobile.jpg, /img/image/banner2-mobile-retina.jpg 2x" media="(max-width: 700px)" width="335" height="357">
+                    <source srcset="/img/image/banner2-tablet.jpg, /img/image/banner2-tablet-retina.jpg 2x" media="(max-width: 1123px)" width="258" height="512">
+                    <source srcset="/img/image/banner2.jpg, /img/image/banner2-retina.jpg 2x" width="480" height="559">
+                    <img class="" src="/img/image/banner2.jpg" alt="banner2" width="480" height="559">
+                </picture>
                 <ul class="index__delivery__list">
                     <li>
                         <h2 class="index__delivery__title">Delivery</h2>
@@ -117,18 +133,26 @@
             <section class="index__company">
                 <h5>Company</h5>
                 <ul class="index__company__list">
-                    <li><img src="./img/icons/logoMailru.svg" alt="logo_mailru" width="193" height="60"></li>
-                    <li><img src="./img/icons/logoApple.svg" alt="logo_apple" width="179" height="61"></li>
-                    <li><img src="./img/icons/logoEltex.svg" alt="logo_eltex" width="216" height="46"></li>
-                    <li><img src="./img/icons/logoOwox.svg" alt="logo_owox" width="211" height="40"></li>
+                    <li class="index__company__list_items">
+                        <img class="index__company__logoMailru" src="./img/icons/logoMailru.svg" alt="logo_mailru" width="193" height="60">
+                    </li>
+                    <li class="index__company__list_items">
+                        <img class="index__company__logoApple" src="./img/icons/logoApple.svg" alt="logo_apple" width="179" height="61">
+                    </li>
+                    <li class="index__company__list_items">
+                        <img class="index__company__logoEltex" src="./img/icons/logoEltex.svg" alt="logo_eltex" width="216" height="46">
+                    </li>
+                    <li class="index__company__list_items">
+                        <img class="index__company__logoOwox" src="./img/icons/logoOwox.svg" alt="logo_owox" width="211" height="40">
+                    </li>
                 </ul>
             </section>
-            <section>
+            <section class="index__about">
                 <h5>About Us</h5>
                 <ul class="index__about_us">
                     <li class="index__about_us__dlk">
                         <p class="index__about_us__dlk__title">Design Life Kids</p>
-                        <div class="index__about_us__dlk__backgrond">
+                        <div class="index__about_us__dlk__info">
                             <p class="index__about_us__dlk__subtitle">About Us</p>
                             <p class="index__about_us__dlk__text">
                                 Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.                            
@@ -138,9 +162,12 @@
                     </li>
                     <li class="index__about_us__contacts">
                         <p class="index__about_us__contacts__title">Contacts</p>
-                        <p class="index__about_us__contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                        <map name="index__about_us__map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1186.2867715655852!2d49.29056910655404!3d53.51181304808484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1661362493320!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="index__about_us__contacts__info">
+                            <p class="index__about_us__contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                        </div>
+                        <map class="index__about_us__map">
+                            <!-- <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1186.2867715655852!2d49.29056910655404!3d53.51181304808484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1661362493320!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1RW4tGOIfLCsp930TgpHuR_4yHmUWEp4&ehbc=2E312F" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </map>
                     </li>
                 </ul>
@@ -149,30 +176,28 @@
         @@include('blocks/footer.html')
         <div class="popup">
             <form class="popup__form">
-                <ul class="popup__list">
-                    <li>
-                        <label for="popup__input__name" class="popup__input__label">Name</label>
-                        <input class="popup__input__name" type="text" id="popup__input__name" placeholder="Ivan Ivanov">
-                    </li>
-                    <li class="popup__list_items">
-                        <label for="popup__input__phone" class="popup__input__label">Phone</label>
-                        <input type="tel" class="popup__input__phone" id="popup__input__phone">
-                    </li>
-                    <li class="popup__list_items">
-                        <label for="popup__input__email" class="popup__input__label">Email</label>
-                        <input type="text" class="popup__input__email" id="popup__input__email">
-                    </li>
-                    <li>
-                        <label for="popup__input__msg" class="popup__input__label">Message</label>
-                            <textarea name="Message" id="popup__input__msg" cols="30" rows="10"></textarea>
-                        <div class="popup__checkbox__input">
-                            <input type="checkbox" class="popup__input__check" id="popup__input__check">
-                            <label for="popup__input__check" class="popup__input__label">By clicking on the button, you consent to the processing of your personal data</label>
-                        </div>
-                        <button class="popup__button__submit" type="submit">submit</button>
-                    </li>
-                </ul>
-                <img src="/img/icons/close.svg" alt="" class="popap__close" width="15" height="15">
+                <div class="popup__list">
+                    <label for="popup__input__name" class="popup__input__label">Name</label>
+                    <input class="popup__input__name" type="text" id="popup__input__name" placeholder="Ivan Ivanov">
+                    <ul class="popup__list__input">
+                        <li class="popup__list_items">
+                            <label for="popup__input__phone" class="popup__input__label">Phone</label>
+                            <input type="tel" class="popup__input__phone" id="popup__input__phone">
+                        </li>
+                        <li class="popup__list_items">
+                            <label for="popup__input__email" class="popup__input__label">Email</label>
+                            <input type="text" class="popup__input__email" id="popup__input__email">
+                        </li>
+                    </ul>
+                    <label for="popup__input__msg" class="popup__input__label">Message</label>
+                        <textarea name="Message" id="popup__input__msg" cols="30" rows="10"></textarea>
+                    <div class="popup__checkbox__input">
+                        <input type="checkbox" class="popup__input__check" id="popup__input__check">
+                        <label for="popup__input__check" class="popup__input__label">By clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                    <button class="popup__button__submit" type="submit">submit</button>
+                </div>
+                <img src="/img/icons/close.svg" alt="" class="popup__close" width="15" height="15">
             </form>
         </div>
         <script src="/js/index.js"></script>

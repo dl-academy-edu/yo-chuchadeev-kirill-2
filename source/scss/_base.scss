@@ -1,12 +1,16 @@
 .center {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 body {
     font-family: 'Open Sans';
-    min-width: 1400px;
+    // min-width: 1400px;
     margin: auto;
+}
+
+.body_lock {
+    overflow: hidden;
 }
 
 li {
@@ -18,9 +22,9 @@ a {
     cursor: pointer;
 }
 
-p, 
-ul, 
+p,
 hr,
+ul,
 h3 {
     margin: 0;
     padding: 0;

@@ -1,16 +1,27 @@
-// стили для анимации
+// Style for Animation
 
 
-.animation {
+.main_title {
     margin-left: 110px;
+    transition: .3s;
+    @media screen and (max-width: 960px) {
+        margin-left: 60px;
+    }
+    @media screen and (max-width: 700px) {
+        margin-left: 20px;
+    }
 }
 
 .scene {
     position: relative;
+    margin: auto auto;
     margin-top: 50px;
-    width: 100%;
+    max-width: 1585px;
     height: 768px;
-    left: 5px;
+    // left: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 70px;
 }
 
 .scene__cloud {
