@@ -1476,7 +1476,86 @@ textarea {
     margin-bottom: 0;
 }
 
+.svg__sky {
+	x: 249;
+	y: 208;
+	fill: #5D9CEC;
+    animation: svg__sky 10s forwards infinite linear;
+}
 
+@keyframes svg__sky {
+    0% {
+		fill: #5D9CEC;
+    }
+    25% {
+		fill: #2066c2;
+    }
+    35% {
+		fill: #023d8a;
+    }
+    40% {
+		fill: #000d7e;
+    }
+	60% {
+		fill: #000d7e;
+    }
+	65% {
+		fill: #023d8a;
+    }
+	75% {
+		fill: #2066c2;
+    }
+	80% {
+		fill: #5D9CEC;
+    }
+}
+
+.svg__sun {
+	cx: 283;
+	cy: 235.5;
+	fill: #FFCE54;
+	animation: svg__sun 10s forwards infinite linear;
+}
+
+@keyframes svg__sun {
+    20% {
+		fill-opacity: 0.5;
+    }
+    25% {
+		fill-opacity: 0;
+    }    
+	65% {
+		fill-opacity: 0;
+    }
+	70% {
+		fill-opacity: 0.5;
+	}
+	75% {
+		fill-opacity: 1;
+    }
+}
+
+.svg__moon {
+	fill: #e6d6b0;
+	transform: translate(270px, 224px);
+	fill-opacity: 0;
+	animation: svg__moon 10s forwards infinite linear;
+}
+
+@keyframes svg__moon {
+	30% {
+		fill-opacity: 0;
+    }  
+	35% {
+		fill-opacity: 1;
+    }
+	55% {
+		fill-opacity: 1;
+	}
+	60% {
+		fill-opacity: 0;
+    }
+}
 // style for contact us
 
 
